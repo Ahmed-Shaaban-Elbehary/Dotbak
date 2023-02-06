@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotbak.App", "Dotbak\Dotbak.App.csproj", "{16455DD9-93B2-4B0A-8F61-5078D52321C8}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Dotbak.Setup", "Dotbak.Setup\Dotbak.Setup.vdproj", "{B8582EB2-0EF3-4488-94F4-4730BAD85511}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{16455DD9-93B2-4B0A-8F61-5078D52321C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16455DD9-93B2-4B0A-8F61-5078D52321C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16455DD9-93B2-4B0A-8F61-5078D52321C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8582EB2-0EF3-4488-94F4-4730BAD85511}.Debug|Any CPU.ActiveCfg = Debug
+		{B8582EB2-0EF3-4488-94F4-4730BAD85511}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
