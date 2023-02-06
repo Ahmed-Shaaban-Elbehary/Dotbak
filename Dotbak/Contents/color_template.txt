@@ -1,0 +1,3 @@
+colors:
+background-color: #95D6A4
+background-color2: #FFC250
