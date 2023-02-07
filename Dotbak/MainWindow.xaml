@@ -16,13 +16,14 @@
         <ComboBox x:Name="CmbDatabases" HorizontalAlignment="Left" Margin="141,89,0,0" VerticalAlignment="Top" Width="299" Height="22" Grid.RowSpan="1" SelectionChanged="CmbDatabases_SelectionChanged">
             <ComboBoxItem IsEnabled="False" Foreground="Black">Select Database</ComboBoxItem>
         </ComboBox>
-        <Label Content="Database Location" HorizontalAlignment="Left" Margin="18,116,0,0" VerticalAlignment="Top" FontWeight="Heavy" Padding="0,0,0,0" Foreground="#FF2C3E50" Height="15" Width="115"/>
-        <TextBox x:Name="TxtDatabaselocation" HorizontalAlignment="Left" Margin="141,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="299" Height="63" IsReadOnlyCaretVisible="True" IsReadOnly="True"/>
-        <TextBlock x:Name="TxtDatabaseCreatedDate" HorizontalAlignment="Left" Height="28" Margin="18,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" FontWeight="Light" FontSize="11" Foreground="#FF2C3E50"/>
-        <Label Content="Backup Location" HorizontalAlignment="Left" Margin="18,187,0,0" VerticalAlignment="Top" Padding="0,0,0,0" FontWeight="Heavy" Width="105" Foreground="#FF2C3E50" Height="16"/>
-        <Button x:Name="BrowseBtn" Content="Browse" HorizontalAlignment="Left" Margin="141,187,0,0" VerticalAlignment="Top" Width="299" BorderBrush="#FF2C3E50" Foreground="White" Background="#FF27AE60" Padding="0,0,0,0" Height="26" Click="BrowseBtn_Click"/>
-        <TextBlock x:Name="SelectedPathTxtBox" Background="Transparent" HorizontalAlignment="Left" Margin="141,218,0,0" TextWrapping="Wrap" FontWeight="Light" VerticalAlignment="Top" Width="299" Height="18" FontSize="11"/>
-        <Button x:Name="BackupBtn" Content="BACKUP" HorizontalAlignment="Center" Width="460" Background="#FFE74C3C" Foreground="White" BorderBrush="#FF2C3E50" BorderThickness="3,3,3,3" SnapsToDevicePixels="True" Margin="0,241,0,10" Click="BackupBtn_Click"/>
+        <Label Content="Database Location" HorizontalAlignment="Left" Margin="16,124,0,0" VerticalAlignment="Top" FontWeight="Heavy" Padding="0,0,0,0" Foreground="#FF2C3E50" Height="15" Width="115"/>
+        <TextBox x:Name="TxtDatabaselocation" HorizontalAlignment="Left" Margin="141,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="299" Height="63" IsReadOnlyCaretVisible="True" IsReadOnly="True"/>
+        <TextBlock x:Name="TxtDatabaseCreatedDate" HorizontalAlignment="Left" Height="43" Margin="18,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" FontWeight="Light" FontSize="11" Foreground="#FF2C3E50"/>
+        <TextBlock x:Name="TxtDatabaseCounter" HorizontalAlignment="Left" Height="16" Margin="16,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" FontWeight="Light" FontSize="11" Foreground="#FF2C3E50"/>
+        <Label Content="Backup Location" HorizontalAlignment="Left" Margin="18,193,0,0" VerticalAlignment="Top" Padding="0,0,0,0" FontWeight="Heavy" Width="105" Foreground="#FF2C3E50" Height="16"/>
+        <Button x:Name="BrowseBtn" Content="Browse" HorizontalAlignment="Left" Margin="141,193,0,0" VerticalAlignment="Top" Width="299" BorderBrush="#FF2C3E50" Foreground="White" Background="#FF27AE60" Padding="0,0,0,0" Height="26" Click="BrowseBtn_Click"/>
+        <TextBlock x:Name="SelectedPathTxtBox" Background="Transparent" HorizontalAlignment="Left" Margin="141,223,0,0" TextWrapping="Wrap" FontWeight="Light" VerticalAlignment="Top" Width="299" Height="13" FontSize="11"/>
+        <Button x:Name="BackupBtn" Content="BACKUP" HorizontalAlignment="Center" Width="424" Background="#FFE74C3C" Foreground="White" BorderBrush="#FF2C3E50" BorderThickness="3,3,3,3" SnapsToDevicePixels="True" Margin="0,241,0,10" Click="BackupBtn_Click"/>
         <Image x:Name="Image_LoadImage" HorizontalAlignment="Left" Margin="165,244,0,1" Width="169"/>
     </Grid>
 </Window>

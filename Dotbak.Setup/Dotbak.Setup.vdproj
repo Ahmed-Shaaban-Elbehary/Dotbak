@@ -55,6 +55,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -71,6 +79,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -181,7 +205,7 @@
             {
             "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
-            "AlwaysCreate" = "11:FALSE"
+            "AlwaysCreate" = "11:TRUE"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Property" = "8:TARGETDIR"
@@ -214,7 +238,7 @@
             "{1525181F-901A-416C-8A58-119130FE478E}:_867B4D4DD4CF448B82DB42CC45F0BD4A"
             {
             "Name" = "8:#1919"
-            "AlwaysCreate" = "11:FALSE"
+            "AlwaysCreate" = "11:TRUE"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Property" = "8:ProgramMenuFolder"
@@ -222,10 +246,32 @@
                 {
                 }
             }
+            "{1525181F-901A-416C-8A58-119130FE478E}:_9C42C87AF4EC4874AA8E32685B924BFA"
+            {
+            "Name" = "8:#1921"
+            "AlwaysCreate" = "11:TRUE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:StartMenuFolder"
+                "Folders"
+                {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_F89078026E6C46C2A57D1A54DDF9EB7E"
+                    {
+                    "Name" = "8:Dotbak"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_17897FAA5D8C435EA5597AE17E601D00"
+                        "Folders"
+                        {
+                        }
+                    }
+                }
+            }
             "{1525181F-901A-416C-8A58-119130FE478E}:_E9E4102B9F7D4B1ABB46F159FE289AFA"
             {
             "Name" = "8:#1916"
-            "AlwaysCreate" = "11:FALSE"
+            "AlwaysCreate" = "11:TRUE"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Property" = "8:DesktopFolder"
@@ -250,15 +296,15 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Dotbak App"
         "ProductCode" = "8:{34C66A63-A516-4A03-A312-16D14733AEAE}"
-        "PackageCode" = "8:{902FDE9D-0E75-4DC2-BFD0-3A80EE11A05D}"
+        "PackageCode" = "8:{E223B8F6-B471-454C-81F3-D419D0DD4DD3}"
         "UpgradeCode" = "8:{48018181-2626-44C7-8AE7-8D4D515A9BEC}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:Elbehary"
+        "Manufacturer" = "8:Dotbak"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
         "Title" = "8:Dotbak App"
@@ -267,8 +313,8 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:Database Backup Exporter"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:"
-        "ARPIconIndex" = "3:0"
+        "ARPPRODUCTICON" = "8:_BFD997DC00EF456889C5BE8A50393890"
+        "ARPIconIndex" = "3:32512"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
         "TargetPlatform" = "3:0"
@@ -370,6 +416,20 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_0A2A787AD91D40E4927525795C2031CE"
+            {
+            "Name" = "8:Dotbak"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:32512"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_867B4D4DD4CF448B82DB42CC45F0BD4A"
+            "Folder" = "8:_867B4D4DD4CF448B82DB42CC45F0BD4A"
+            "WorkingFolder" = "8:_867B4D4DD4CF448B82DB42CC45F0BD4A"
+            "Icon" = "8:_BFD997DC00EF456889C5BE8A50393890"
+            "Feature" = "8:"
+            }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_3F6DAE305BB84DCB9B9CA0935DC55C39"
             {
             "Name" = "8:Dotbak"
@@ -380,6 +440,20 @@
             "Transitive" = "11:FALSE"
             "Target" = "8:_BFD997DC00EF456889C5BE8A50393890"
             "Folder" = "8:_E9E4102B9F7D4B1ABB46F159FE289AFA"
+            "WorkingFolder" = "8:_B59467C5B446497D88CB6D1246FD044C"
+            "Icon" = "8:_BFD997DC00EF456889C5BE8A50393890"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_974C3B10F91E4D8A99FF5CB3FD434D02"
+            {
+            "Name" = "8:Dotbak"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:32512"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_BFD997DC00EF456889C5BE8A50393890"
+            "Folder" = "8:_F89078026E6C46C2A57D1A54DDF9EB7E"
             "WorkingFolder" = "8:_B59467C5B446497D88CB6D1246FD044C"
             "Icon" = "8:_BFD997DC00EF456889C5BE8A50393890"
             "Feature" = "8:"

@@ -1,7 +1,4 @@
-﻿using dotbak.Models;
-using dotbak.Services;
-using dotbak.Utilities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows;
@@ -9,8 +6,9 @@ using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Media.Imaging;
 using System.Windows.Threading;
-using WinForms = System.Windows.Forms;
-
+using dotbak.Models;
+using dotbak.Services;
+using dotbak.Utilities;
 namespace Dotbak.App
 {
     /// <summary>
@@ -39,10 +37,10 @@ namespace Dotbak.App
         {
             try
             {
-                using (var dialog = new WinForms.FolderBrowserDialog())
+                using (var dialog = new FolderBrowserDialog())
                 {
                     DialogResult result = dialog.ShowDialog();
-                    if (result == WinForms.DialogResult.OK)
+                    if (result == System.Windows.Forms.DialogResult.OK)
                     {
                         path = dialog.SelectedPath;
                         SelectedPathTxtBox.Text = $"Selected Path: {path.Trim()}";
@@ -113,10 +111,13 @@ namespace Dotbak.App
             try
             {
                 List<string> serverDatabase = this.serverInfoService.GetDatabases();
+                int count = 0;
                 serverDatabase.ForEach(e =>
                 {
                     CmbDatabases.Items.Add(e);
+                    count++;
                 });
+                TxtDatabaseCounter.Text = $"{count} Databases";
                 CmbDatabases.SelectedIndex = 0;
                 TxtDatabaseCreatedDate.Text = string.Empty;
             }
