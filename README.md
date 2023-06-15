@@ -1,3 +1,3 @@
 # dot-bak
 ## Database Backup Exporter
-Application help take backup of the selected database.
+This application helps to take a backup of a selected database.
